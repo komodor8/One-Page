@@ -1,0 +1,160 @@
+<!doctype html>
+<html class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="author" type="text/plain" href="humans.txt" />
+
+		<title>Sepak Takraw</title>
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+		<!--[if lte IE 6]>
+			<link rel="stylesheet" type="text/css" media="screen, projection" href="http://universal-ie6-css.googlecode.com/files/ie6.1.1b.css" />
+		<![endif]-->
+		<!--[if IE]>
+			<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<script type="text/javascript" src="js/custom.js"></script>
+
+		<style type="text/css">
+			:root{
+				--body-bgcolor:#274f6a;
+				--page-bgcolor:#2a2b30;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="pages-nav">
+			<div class="pages-nav__item"><a class="link link--page" href="#home">Titre</a></div>
+			<div class="pages-nav__item"><a class="link link--page" href="#about">Titre</a></div>
+			<div class="pages-nav__item"><a class="link link--page" href="#contact">Titre</a></div>
+			<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#staff">Titre</a></div>
+			<div class="pages-nav__item pages-nav__item--small"><a class="link link--page link--faded" href="#terms">Titre</a></div>
+			<div class="pages-nav__item pages-nav__item--social">
+				<a class="link link--social link--faded" target="_blank" href="#">
+					<i class="fa fa-twitter"></i>
+					<span class="text-hidden">Twitter</span>
+				</a>
+				<a class="link link--social link--faded" target="_blank" href="#">
+					<i class="fa fa-facebook"></i>
+					<span class="text-hidden">Facebook</span>
+				</a>
+			</div>
+		</nav>
+		<div class="pages-stack">
+			<div class="page" id="home">
+				<header class="bp-header cf">
+					<h1 class="bp-header__title">Titre</h1>
+					<p class="info">
+						Text
+					</p>
+				</header>
+				<img src="">
+			</div>
+			<div class="page" id="about">
+				<header class="bp-header cf">
+					<h1 class="bp-header__title">Titre</h1>
+					<p class="info">
+						Text
+					</p>
+				</header>
+				<img src="">
+			</div>
+			<div class="page" id="contact">
+				<header class="bp-header cf">
+					<h1 class="bp-header__title">Contact</h1>
+					<p class="info">
+						<div class="row">
+							<div class="col-xs-5">
+								<p>Text here</p>
+							</div>
+							<div class="col-xs-5">
+								<form id="theForm" class="simform" autocomplete="off" method="get">
+									<div class="simform-inner">
+										<ol class="questions">
+											<li>
+												<span><label for="q1">Quel est votre prénom ?</label></span>
+												<input id="q1" name="q1" type="text" required placeholder="Jean"/>
+											</li>
+											<li>
+												<span><label for="q2">Quel est votre nom de famille ?</label></span>
+												<input id="q2" name="q2" type="text" required placeholder="Dupont"/>
+											</li>
+											<li>
+												<span><label for="q3">Quel est votre adresse E-Mail ?</label></span>
+												<input id="q3" name="q3" type="text" required placeholder="jean.dupont@example.org"/>
+											</li>
+											<li>
+												<span><label for="q4">Quel est votre message</label></span>
+												<input id="q4" name="q4" type="text" required placeholder="Bonjour, je..."/>
+											</li>
+										</ol><!-- Counter is automacaly updated by the numbers of <li> tags -->
+										<button class="submit" type="button">Send answers</button>
+										<div class="controls">
+											<button class="next" type="button"></button>
+											<div class="progress"></div>
+											<span class="number">
+												<span class="number-current"></span>
+												<span class="number-total"></span>
+											</span>
+											<span class="error-message"></span>
+										</div>
+									</div>
+									<span class="final-message"></span>
+								</form>
+							</div>
+						</div>
+					</p>
+				</header>
+			</div>
+			<div class="page" id="staff">
+				<header class="bp-header cf">
+					<h1 class="bp-header__title">Title</h1>
+					<p class="info">
+						Text
+					</p>
+				</header>
+			</div>
+			<div class="page" id="terms">
+				<header class="bp-header cf">
+					<h1 class="bp-header__title">Title</h1>
+					<p class="info">
+						Text
+					</p>
+				</header>
+			</div>
+		</div>
+		<button class="menu-button"><span>Menu</span></button>
+		<span class="copyright">© Kasai. 2015</span>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			/* Form */
+			// I can't change document.getElementById by the jQuery selector because the form bug with it :/
+			var theForm = document.getElementById("theForm");
+			new stepsForm(theForm,{
+				onSubmit:function(form){ // Classie smells shit
+					classie.addClass(theForm.querySelector(".simform-inner"),"hide"); // Hide form
+					var messageEl = theForm.querySelector(".final-message");
+					messageEl.innerHTML = "Thank you! We'll be in touch.";
+					classie.addClass(messageEl,"show"); // Show the message
+
+					function form_submit(){
+						form.submit();
+						// Maybe with Ajax request if i have the time.
+					};
+					window.setTimeout(form_submit,3000); // 3 seconds
+				}
+			});
+			/* Form */
+		</script>
+	</body>
+</html>
