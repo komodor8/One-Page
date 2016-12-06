@@ -1,595 +1,489 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    <title>Sepak Takraw</title>
+    <meta name="description" content="This is a free Bootstrap landing page theme created for BootstrapZero. Feature video background and one page design." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="jquery/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i> Sepakiller</a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a class="page-scroll" href="#one">Présentation</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#two">L'association</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#three">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#four">Boutique</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="#five">Partenaires</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#last">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="first">
+        <div class="header-content">
+            <div class="inner">
+                <h1 class="cursive">Spinning Bird Kick !!</h1>
+                <h4>A la découverte du Sepak Takraw</h4>
+                <hr>
+                <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl dbz">Video</a> &nbsp; <a href="#one" class="btn btn-primary btn-xl page-scroll dbz">Visite</a>
+            </div>
+        </div>
+        <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="ressources/sep1.jpg" id="video-background">
+            <source src="ressources/sepak_awesome.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser />
+        </video>
+    </header>
+    <section class="bg-primary" id="one">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-1 col-md-8 col-md-offset-2 text-center">
+                    <h2 class="margin-top-0 text-primary">Le Sepak Takraw</h2>
+                    <br>
+                    <p class="text-faded">
+                        Le Sepak Tukraw est un sport issu d'Asie du Sud-Est où il est très populaire. Proche du volley-ball, ce sport se pratique à trois contre trois avec une balle en rotin tressé (maintenant le plus souvent la balle est en plastique) de 15cm de diamètre pour 200g sur un terrain de 13.4m sur 6.1m avec un filet à 1.55m de hauteur.
+                    </p>
+                    <img src="ressources/sepak1.jpg"></img>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-2 col-md-8 col-md-offset-2 text-center">
+                    <h2 class="margin-top-0 text-primary">Histoire</h2>
+                    <br>
+                    <p class="text-faded">
+                        Le Sepak Takraw est un sport d'origine asiatique, qui a évolué au fil du temps.
+                        On ne connaît pas l'origine exacte de ce sport. Seulement quelques repères : au 11ème siècle, le Sepak Takraw était énormément joué dans les pays du sud-est asiatique. Traditionnellement les villageois formaient un cercle et devaient garder la balle en l'air aussi longtemps que possible.
 
-		<title>Sepak Takraw</title>
-		
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css" />
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/ionicons/2.0.1/css/ionicons.min.css" />
-		<link rel="stylesheet" href="css/bootstrap.min.css" />
-		<link rel="stylesheet" href="css/styles.css" />
-
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"></script>
-		<script type="text/javascript" src="js/scripts.js"></script>
-		<script type="text/javascript">/* konami */
-			!function(t){"user strict";konami_code="38,38,40,40,37,39,37,39,66,65";key_stack=new Array();window.onkeydown=function(e){console.log(e);console.log(e.keyCode);key_stack.push(e.keyCode);if(key_stack.join().substring(key_stack.join().length-konami_code.length)==konami_code){shake_js=document.createElement("script");shake_js.type="text/javascript";shake_js.async=true;/*shake_js.src=("https:"==document.location.protocol ? "https://":"http://")+"gist.githubusercontent.com/devn/5007287/raw/57f8c09fc9dbbdb733952e1117bf33db1cf9a3d2/harlem-shake.js";*/shake_js.src="js/harlem-shake.js";document.getElementsByTagName("head")[0].appendChild(shake_js);setTimeout(function(){document.getElementsByTagName("head")[0].removeChild(shake_js);},35000);}}}(window);
-		</script>
-	</head>
-	<body>
-		<nav id="topNav" class="navbar navbar-default navbar-fixed-top">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand page-scroll" href="#first"><i class="ion-ios-analytics-outline"></i> Sepakiller</a>
-				</div>
-				<div class="navbar-collapse collapse" id="bs-navbar">
-					<ul class="nav navbar-nav">
-						<li>
-							<a class="page-scroll" href="#one">Présentation</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#two">L'association</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#three">Gallery</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#four">Boutique</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#five">Partenaires</a>
-						</li>
-						<li>
-							<a class="page-scroll" href="#last">Contact</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<header id="first">
-			<div class="header-content">
-				<div class="inner">
-					<h1 class="cursive">Spinning Bird Kick !!</h1>
-					<h4>A la découverte du Sepak Takraw</h4>
-					<hr>
-					<a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl dbz">Video</a> &nbsp; <a href="#one" class="btn btn-primary btn-xl page-scroll dbz">Visite</a>
-				</div>
-			</div>
-			<video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="ressources/sepak1.jpg" id="video-background" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeIn;">
-				<source src="ressources/sepak_awesome.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
-			</video>
-		</header>
-		<section class="bg-primary" id="one">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-lg-offset-1 col-md-8 col-md-offset-2 text-center">
-						<h2 class="margin-top-0 text-primary">Le Sepak Takraw</h2>
-						<br>
-						<p class="text-faded">
-							Le Sepak Tukraw est un sport issu d'Asie du Sud-Est où il est très populaire. Proche du volley-ball, ce sport se pratique à trois contre trois avec une balle en rotin tressé (maintenant le plus souvent la balle est en plastique) de 15cm de diamètre pour 200g sur un terrain de 13.4m sur 6.1m avec un filet à 1.55m de hauteur.
-						</p>
-						<img src="ressources/sepak1.jpg"></img>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-lg-offset-2 col-md-8 col-md-offset-2 text-center">
-						<h2 class="margin-top-0 text-primary">Histoire</h2>
-						<br>
-						<p class="text-faded">
-							Le Sepak Takraw est un sport d'origine asiatique, qui a évolué au fil du temps.
-							On ne connaît pas l'origine exacte de ce sport. Seulement quelques repères : au 11ème siècle, le Sepak Takraw était énormément joué dans les pays du sud-est asiatique. Traditionnellement les villageois formaient un cercle et devaient garder la balle en l'air aussi longtemps que possible.
-
-							Aujourd'hui ce jeu en cercle reste très populaire dans cette partie du monde, et s'est surtout développé en tant que "sport pour tous". L'esprit de communauté, valeur importante pour les Asiatiques se manifeste dans ces échanges.
+                        Aujourd'hui ce jeu en cercle reste très populaire dans cette partie du monde, et s'est surtout développé en tant que "sport pour tous". L'esprit de communauté, valeur importante pour les Asiatiques se manifeste dans ces échanges.
 
 
-							C'est au 19ème siècle qu'apparaît un filet, il est placé dans la largeur du terrain et délimite celui-ci en deux surfaces de même longueur. Il fallut attendre 1965 pour voir ce sport se structurer véritablement avec la création d'une fédération : l'Asian Sepak Takraw Federation (SATAF), qui lui donne le nom de Sepak Takraw et définit des règles de jeu précises.
-						</p>
-						<img src="ressources/takrawenville.jpg" />
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-lg-offset-1 col-md-8 col-md-offset-2 text-center">
-						<h2 class="margin-top-0 text-primary">Règles</h2>
-						<br>
-						<p class="text-faded">
-							Deux équipes de 3 joueurs.
-							Dans chaque équipe, celui qui se tient au centre s'appelle tekong (c'est aussi le serveur). Les deux autres se placent plus à l'avant et sur les côtés, on les nomme apit kiri et apit kanan.
-							Avant de commencer à jouer, les équipes choisissent soit le côté du terrain, soit d'avoir l'engagement (par tirage au sort). 
-							Trois touches de balle maximum, sinon le point revient à l'équipe adverse.
-							L'équipe gagnante du premier set, engage en premier, lors du second set, etc.
-							Le système de points : ce sport se joue jusqu'à 21 points; match en deux sets gagnants; l'équipe peut demander 5 minutes de pause avant la fin.
-						</p>
-						<img src="ressources/courttakraw.jpg" />
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-lg-offset-2 col-md-8 col-md-offset-2 text-center">
-						<h2 class="margin-top-0 text-primary">Valeurs</h2>
-						<br>
-						<p class="text-faded">
-							L'esprit de communauté, valeur importante pour les Asiatiques, se manifeste dans ces échanges. Des échanges propices non pas à des prises de bec mais avant tout à un « jeu sportif », deux termes non pas antagonistes et qui ici peuvent fort bien s’accommoder l’un de l’autre. La compétition, dans les villages où le jeu continue à se pratiquer, n’est pas la priorité, celle-ci revient au plaisir d’être ensemble et de jouer collectivement. Le takraw est une pratique de vivre-ensemble autant qu’une expression de bien-être. Dans ce jeu, chacun a besoin de son voisin et de l’autre pour avancer et « gagner », la convivialité s’accompagne donc aussi d’une bonne dose de solidarité, ce qui ne fait jamais de mal…
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="two">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<h2 class="margin-top-0 text-primary">L'association</h2>
-						<hr class="primary">
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row td">
-					<div class="col-lg-4 col-md-4 text-center">
-						<div class="feature">
-							<h3>A propos de nous</h3>
-							<p class="text-muted">En 2003, sous l’impulsion de joueurs français ayant vécu longtemps en Asie et de MEGASPORT (partenaire exclusif du Takraw en France), les démarches sont engagées pour fonder l'Association Sepakiller.
-							Désormais sur le point de se structurer en fédération, le SEPAK TAKRAW français recherche des sponsors et des partenaires financiers pour continuer son développement national et international car l'ambition ne se limite pas à l'Europe ; l'objectif est double : se qualifier l'année prochaine pour la King's Cup en Thaïlande (équivalent de la Coupe du Monde) et contribuer à ce que le SEPAK TAKRAW devienne sport Olympique aux JO 2008 de Pékin (une démonstration a déjà été effectuée devant Juan Antonio Samaranch en 2000).</p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 text-center">
-						<div class="feature">
-							<h3>Organisation</h3>
-							<p class="text-muted">
-								<tbody>
-									<tr bgcolor="#000066">
-										<td bgcolor="#000066" width="485">
-											<div align="center">
-												<b>
-													<font color="#9999cc" face="Verdana, Arial, Helvetica, sans-serif" size="2">ORGANIGRAMME</font>
-												</b>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td height="64" valign="top">
-											<table border="1" bordercolor="#000066" cellpadding="0" cellspacing="0" height="265" width="100%">
-												<tbody>
-													<tr>
-														<td bgcolor="#9999cc" height="46" width="51%">
-															<div align="center">
-																<font color="#000066">
-																	<b>
-																		<font face="Verdana, Arial, Helvetica, sans-serif" size="2">Président</font>
-																	</b>
-																</font>
-															</div>
-														</td>
-														<td bgcolor="#666699" height="46" width="49%">
-															<div align="center">
-																<font color="#000066">
-																	<b>
-																		<font color="#ffffff" face="Verdana, Arial, Helvetica, sans-serif" size="2">Son Goku </font>
-																	</b>
-																</font>
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td bgcolor="#9999cc" height="46">
-															<div align="center">
-																<font color="#000066">
-																	<b>
-																		<font face="Verdana, Arial, Helvetica, sans-serif" size="2">Vice-Président</font>
-																	</b>
-																</font>
-															</div>
-														</td>
-														<td bgcolor="#666699">
-															<div align="center">
-																<font color="#000066">
-																	<b>
-																		<font color="#000066">
-																			<b>
-																				<font color="#ffffff" face="Verdana, Arial, Helvetica, sans-serif" size="2">Yamcha </font>
-																			</b>
-																		</font>
-																	</b>
-																</font>
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td bgcolor="#9999cc" height="46">
-															<div align="center">
-																<font color="#000066">
-																	<b>
-																		<font face="Verdana, Arial, Helvetica, sans-serif" size="2">Vice-Président</font>
-																	</b>
-																</font>
-															</div>
-														</td>
-														<td bgcolor="#666699">
-															<div align="center">
-																<font color="#000066">
-																	<b>
-																		<font color="#000066">
-																			<b>
-																				<font color="#ffffff" face="Verdana, Arial, Helvetica, sans-serif" size="2">Vegeta</font>
-																			</b>
-																		</font>
-																	</b>
-																</font>
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td bgcolor="#9999cc" height="46" width="51%">
-															<div align="center">
-																<font color="#000066">
-																	<b>
-																		<font color="#000066">
-																			<b>
-																				<font face="Verdana, Arial, Helvetica, sans-serif" size="2">Trésorier</font>
-																			</b>
-																		</font>
-																	</b>
-																</font>
-															</div>
-														</td>
-														<td bgcolor="#666699" width="49%">
-															<div align="center">
-																<font color="#000066">
-																	<b>
-																		<font color="#000066">
-																			<b>
-																				<font color="#ffffff" face="Verdana, Arial, Helvetica, sans-serif" size="2">Broly</font>
-																			</b>
-																		</font>
-																	</b>
-																</font>
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td bgcolor="#9999cc" height="46">
-															<div align="center">
-																<font color="#000066">
-																	<b>
-																		<font color="#000066">
-																			<b>
-																				<font face="Verdana, Arial, Helvetica, sans-serif" size="2">Trésorier</font>
-																			</b>
-																		</font>
-																	</b>
-																</font>
-															</div>
-														</td>
-														<td bgcolor="#666699">
-															<div align="center">
-																<font color="#000066">
-																	<b>
-																		<font color="#000066">
-																			<b>
-																				<font color="#ffffff" face="Verdana, Arial, Helvetica, sans-serif" size="2">Bulma </font>
-																			</b>
-																		</font>
-																	</b>
-																</font>
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td bgcolor="#9999cc" height="33" width="51%">
-															<div align="center">
-																<font color="#000066">
-																	<b>
-																		<font color="#000066">
-																			<b>
-																				<font face="Verdana, Arial, Helvetica, sans-serif" size="2">Secrétaire</font>
-																			</b>
-																		</font>
-																	</b>
-																</font>
-															</div>
-														</td>
-														<td bgcolor="#666699" width="49%">
-															<div align="center">
-																<font color="#000066">
-																	<b>
-																		<font color="#ffffff" face="Verdana, Arial, Helvetica, sans-serif" size="2">Yajirobe<br>
-																		</font>
-																	</b>
-																</font>
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</td>
-									</tr>
-								</tbody>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="three" class="no-padding">
-			<div class="container-fluid">
-				<div class="row no-gutter">
-					<div class="col-lg-4 col-sm-6">
-						<a href="#galleryModal" class="gallery-box" data-toggle="modal">
-							<img src="ressources/sep1.jpg" class="img-responsive" alt="Image 1"></img>
-						</a>
-					</div>
-					<div class="col-lg-4 col-sm-6">
-						<a href="#galleryModal" class="gallery-box" data-toggle="modal">
-							<img src="ressources/sep2.jpg" class="img-responsive" alt="Image 2"></img>
-						</a>
-					</div>
-					<div class="col-lg-4 col-sm-6">
-						<a href="#galleryModal" class="gallery-box" data-toggle="modal">
-							<img src="ressources/sep3.jpeg" class="img-responsive" alt="Image 3"></img>
-						</a>
-					</div>
-					<div class="col-lg-4 col-sm-6">
-						<a href="#galleryModal" class="gallery-box" data-toggle="modal">
-							<img src="ressources/sepak4.jpg" class="img-responsive" alt="Image 6"></img>
-						</a>
-					</div>
-					<div class="col-lg-4 col-sm-6">
-						<a href="#galleryModal" class="gallery-box" data-toggle="modal">
-							<img src="ressources/sepak2.gif" class="img-responsive" alt="Image 4"></img>
-						</a>
-					</div>
-					<div class="col-lg-4 col-sm-6">
-						<a href="#galleryModal" class="gallery-box" data-toggle="modal">
-							<img src="ressources/sepak3.jpg" class="img-responsive" alt="Image 5"></img>
-						</a>
-					</div>
-					
-				</div>
-			</div>
-		</section>
-		<section class="container-fluid v-center" id="four">
-			<h2 class="margin-top-0 text-primary" style="text-align: center; margin-bottom: 2em;">Boutique</h2>
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-2 col-xs-6">
-					<div class="text-center">
-						<a href="">
-							<img style="width:100px;" class="img-circle img-responsive center-block" src="ressources/ballon.jpg">
-						</a>
-						<h3 class="text-center">Balle de Takraw compétition - adulte/homme</h3>
-						<h3 class="text-center">15€ <br>licencié : 12€</h3>
-					</div>
-				</div>
-				<div class="col-sm-2 col-xs-6">
-					<div class="text-center">
-						<a href="">
-							<img style="width:100px;" class="img-circle img-responsive center-block" src="ressources/junior.jpg">
-						</a>
-						<h3 class="text-center"> Balle de Takraw adulte/femme - junior</h3>
-						<h3 class="text-center">15€ <br>licencié : 12€</h3>
-					</div>
-				</div>
-				<div class="col-sm-2 col-xs-6">
-					<div class="text-center">
-						<a href="">
-							<img style="width:100px;" class="img-circle img-responsive center-block" src="ressources/entrainement.jpg">
-						</a>
-						<h3 class="text-center"> Balle de Takraw enfant/entraînement</h3>
-						<h3 class="text-center">15€ <br>licencié : 12€</h3>
-					</div>
-				</div>
-				<div class="col-sm-2 col-xs-6">
-					<div class="text-center">
-						<a href="">
-							<img style="width:100px;" class="img-circle img-responsive center-block" src="ressources/rotin.jpg">
-						</a>
-						<h3 class="text-center"> Balle de Takraw traditionelle (en rotin)</h3>
-						<h3 class="text-center">15€ <br>licencié : 12€</h3>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-2 col-xs-6">
-					<div class="text-center">
-						<a href="">
-							<img style="width:100px;" class="img-responsive center-block" src="ressources/filet.jpg">
-						</a>
-						<h3 class="text-center">A - filet compétition MN 801 <br> prix : 40€ <br> licencié : 34€ </h3>
-						<h3 class="text-center">B - filet entraînement MN 701 <br> licencié A : 25€ <br> licencié B : 21€ </h3>
-					</div>
-				</div>
-				<div class="col-sm-2 col-xs-6">
-					<div class="text-center">
-						<a href="">
-							<img style="width:100px;" class="img-responsive center-block" src="ressources/poteaux.jpg">
-						</a>
-						<h3 class="text-center"> 2 poteaux</h3>
-						<h3 class="text-center"> prix : - <br>licencié : -10%</h3>
-					</div>
-				</div>
-				<div class="col-sm-2 col-xs-6">
-					<div class="text-center">
-						<a href="">
-							<img style="width:100px;" class="img-responsive center-block" src="ressources/traceur.jpg">
-						</a>
-						<h3 class="text-center">Système de marquage pour courts extérieurs</h3>
-						<h3 class="text-center"> prix : - <br>licencié : -20%</h3>
-					</div>
-				</div>
-				<div class="col-sm-2 col-xs-6">
-					<div class="text-center">
-						<a href="">
-							<img style="width:100px;" class="img-responsive center-block" src="ressources/chaussures.jpg">
-						</a>
-						<h3 class="text-center">Chaussures de Takraw Zupa ®</h3>
-						<h3 class="text-center">A - Basse Blanche et Rouge (tailles 35 au 45) = 40€<br> licencié : 34€ </h3>
-						<h3 class="text-center">B - Montante Blanche et Rouge (tailles 35 au 45) = 45€<br> licencié : 38,25€ </h3>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-2 col-xs-6">
-					<div class="text-center">
-						<a href="">
-							<img style="width:100px;" class="img-responsive center-block" src="ressources/book.jpg">
-						</a>
-						<h3 class="text-center">Guide Officiel du Sepak Takraw
-						<br>Rupture de stock
-						<br>Nouvelle édition en cours de réalisation</h3>
-						<h3 class="text-center"> prix : 20€ <br>licencié : 19€</h3>
-					</div>
-				</div>
-				<div class="col-sm-2 col-xs-6">
-					<div class="text-center">
-						<a href="">
-							<img style="width:100px;" class="img-responsive center-block" src="ressources/cd.jpg">
-						</a>
-						<h3 class="text-center">CD Rom ISTAF (démonstration vidéo)</h3>
-						<h3 class="text-center">OFFERT</h3>
-					 </div>
-				</div>
-			</div>
-		</section>
-		<section id="five">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<h2 class="margin-top-0 text-primary">Partenaires</h2>
-						<hr class="primary">
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4 col-md-4 text-center">
-						<div class="feature">
-						   <img src="ressources/logo1.jpg" class="img-responsive text-center" alt="Image 1">
-							<h3>Ligue nationale de sepak takraw</h3>
-							<p class="text-muted">tous les clubs de France de Sepak Takraw</p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 text-center">
-						<div class="feature">
-							
-							<img src="ressources/logo2.jpg" class="img-responsive text-center" alt="Image 2">
-							<h3>Ligue internationale nationale de sepak takraw</h3>
-							<p class="text-muted">Le Sepak Takraw est très populaire en Asie du sud Est notamment</p>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-4 text-center">
-						<div class="feature">
-							
-							<img src="ressources/logo3.jpg" class="img-responsive text-center" alt="Image 3">
-							<h3>Championnat européen</h3>
-							<p class="text-muted">Des championnats d'Europe au niveaux natioanles</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="last">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-lg-offset-9 text-center">
-						<h2 class="margin-top-0 wow fadeIn">Nous contacter</h2>
-						<hr class="primary">
-						<p>Veuillez préciser la nature de votre demande dans "Titre"</p>
-					</div>
-					<div class="col-lg-10 col-lg-offset-10 text-center">
-						<form class="contact-form row">
-							<div class="col-md-4">
-								<label></label>
-								<input type="text" class="form-control" placeholder="Nom">
-							</div>
-							<div class="col-md-4">
-								<label></label>
-								<input type="text" class="form-control" placeholder="Prénom">
-							</div>
-							<div class="col-md-4">
-								<label></label>
-								<input type="text" class="form-control" placeholder="Email">
-							</div>
-							 <div class="col-md-4">
-								<label></label>
-								<input type="text" class="form-control" placeholder="Titre">
-							</div>
-							<div class="col-md-12">
-								<label></label>
-								<textarea class="form-control" rows="9" placeholder="Votre message.."></textarea>
-							</div>
-							<div class="col-md-4 col-md-offset-4">
-								<label></label>
-								<button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">Send</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-		<footer id="footer">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-6 col-sm-3 column">
-						<h4>Information</h4>
-						<ul class="list-unstyled">
-							<li><a href="">Products</a></li>
-							<li><a href="">Services</a></li>
-							<li><a href="">Benefits</a></li>
-							<li><a href="">Developers</a></li>
-						</ul>
-					</div>
-					<div class="col-xs-6 col-sm-3 column">
-						<h4>About</h4>
-						<ul class="list-unstyled">
-							<li><a href="#">Contact Us</a></li>
-							<li><a href="#">Delivery Information</a></li>
-							<li><a href="#">Privacy Policy</a></li>
-							<li><a href="#">Terms &amp; Conditions</a></li>
-						</ul>
-					</div>
-					<div class="col-xs-12 col-sm-3 column">
-						<h4></h4>
-						<form>
-							<div class="form-group">
-							  <input type="text" class="form-control" title="No spam, we promise!" placeholder="Email">
-							</div>
-							<div class="form-group">
-							  <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">Newsletter</button>
-							</div>
-						</form>
-					</div>
-					<div class="col-xs-12 col-sm-3 text-right">
-						<h4>Nous suivre</h4>
-						<ul class="list-inline">
-							<li>
-								<a href="#">
-									<img src="ressources/fb.svg">
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<img src="ressources/tw.svg">
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<br/>
-				<span class="pull-right text-muted small"><a href="http://www.bootstrapzero.com">Landing Zero by BootstrapZero</a> ©2015 Company</span>
-			</div>
-		</footer>
-	</body>
+                        C'est au 19ème siècle qu'apparaît un filet, il est placé dans la largeur du terrain et délimite celui-ci en deux surfaces de même longueur. Il fallut attendre 1965 pour voir ce sport se structurer véritablement avec la création d'une fédération : l'Asian Sepak Takraw Federation (SATAF), qui lui donne le nom de Sepak Takraw et définit des règles de jeu précises.
+                    </p>
+                    <img src="ressources/takrawenville.jpg"></img>
+                </div>
+            </div>
+        </div>
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-1 col-md-8 col-md-offset-2 text-center">
+                    <h2 class="margin-top-0 text-primary">Règles</h2>
+                    <br>
+                    <p class="text-faded">
+                        Deux équipes de 3 joueurs.
+                        Dans chaque équipe, celui qui se tient au centre s'appelle tekong (c'est aussi le serveur). Les deux autres se placent plus à l'avant et sur les côtés, on les nomme apit kiri et apit kanan.
+                        Avant de commencer à jouer, les équipes choisissent soit le côté du terrain, soit d'avoir l'engagement (par tirage au sort). 
+                        Trois touches de balle maximum, sinon le point revient à l'équipe adverse.
+                        L'équipe gagnante du premier set, engage en premier, lors du second set, etc.
+                        Le système de points : ce sport se joue jusqu'à 21 points; match en deux sets gagnants; l'équipe peut demander 5 minutes de pause avant la fin.
+                    </p>
+                    <img src="ressources/courttakraw.jpg"></img>
+                </div>
+            </div>
+        </div>
+         <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-2 col-md-8 col-md-offset-2 text-center">
+                    <h2 class="margin-top-0 text-primary">Valeurs</h2>
+                    <br>
+                    <p class="text-faded">
+                        L'esprit de communauté, valeur importante pour les Asiatiques, se manifeste dans ces échanges. Des échanges propices non pas à des prises de bec mais avant tout à un « jeu sportif », deux termes non pas antagonistes et qui ici peuvent fort bien s’accommoder l’un de l’autre. La compétition, dans les villages où le jeu continue à se pratiquer, n’est pas la priorité, celle-ci revient au plaisir d’être ensemble et de jouer collectivement. Le takraw est une pratique de vivre-ensemble autant qu’une expression de bien-être. Dans ce jeu, chacun a besoin de son voisin et de l’autre pour avancer et « gagner », la convivialité s’accompagne donc aussi d’une bonne dose de solidarité, ce qui ne fait jamais de mal…
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="two">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="margin-top-0 text-primary">L'association</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row td">
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <h3>A propos de nous</h3>
+                        <p class="text-muted">En 2003, sous l’impulsion de joueurs français ayant vécu longtemps en Asie et de MEGASPORT (partenaire exclusif du Takraw en France), les démarches sont engagées pour fonder l'Association Sepakiller.
+                        Désormais sur le point de se structurer en fédération, le SEPAK TAKRAW français recherche des sponsors et des partenaires financiers pour continuer son développement national et international car l'ambition ne se limite pas à l'Europe ; l'objectif est double : se qualifier l'année prochaine pour la King's Cup en Thaïlande (équivalent de la Coupe du Monde) et contribuer à ce que le SEPAK TAKRAW devienne sport Olympique aux JO 2008 de Pékin (une démonstration a déjà été effectuée devant Juan Antonio Samaranch en 2000).</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 text-center">
+                    <div class="feature">
+                        <h3>Organisation</h3>
+                        <p class="text-muted">
+                            <tbody>
+                                <tr bgcolor="#000066">
+                                <td bgcolor="#000066" width="485">
+                                <div align="center"><b><font color="#9999cc" face="Verdana, Arial, Helvetica, sans-serif" size="2">ORGANIGRAMME</font></b></div>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td height="64" valign="top">
+                                <table border="1" bordercolor="#000066" cellpadding="0" cellspacing="0" height="265" width="100%">
+                                <tbody>
+                                <tr>
+                                <td bgcolor="#9999cc" height="46" width="51%">
+                                <div align="center"><font color="#000066"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Président</font></b></font></div>
+                                </td>
+                                <td bgcolor="#666699" height="46" width="49%">
+                                <div align="center"><font color="#000066"><b><font color="#ffffff" face="Verdana, Arial, Helvetica, sans-serif" size="2">Son Goku </font></b></font></div>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td bgcolor="#9999cc" height="46">
+                                <div align="center"><font color="#000066"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Vice-Président</font></b></font></div>
+                                </td>
+                                <td bgcolor="#666699">
+                                <div align="center"><font color="#000066"><b><font color="#000066"><b><font color="#ffffff" face="Verdana, Arial, Helvetica, sans-serif" size="2">Yamcha </font></b></font></b></font></div>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td bgcolor="#9999cc" height="46">
+                                <div align="center"><font color="#000066"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Vice-Président</font></b></font></div>
+                                </td>
+                                <td bgcolor="#666699">
+                                <div align="center"><font color="#000066"><b><font color="#000066"><b><font color="#ffffff" face="Verdana, Arial, Helvetica, sans-serif" size="2">Vegeta</font></b></font></b></font></div>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td bgcolor="#9999cc" height="46" width="51%">
+                                <div align="center"><font color="#000066"><b><font color="#000066"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Trésorier</font></b></font></b></font></div>
+                                </td>
+                                <td bgcolor="#666699" width="49%">
+                                <div align="center"><font color="#000066"><b><font color="#000066"><b><font color="#ffffff" face="Verdana, Arial, Helvetica, sans-serif" size="2">Broly</font></b></font></b></font></div>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td bgcolor="#9999cc" height="46">
+                                <div align="center"><font color="#000066"><b><font color="#000066"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Trésorier</font></b></font></b></font></div>
+                                </td>
+                                <td bgcolor="#666699">
+                                <div align="center"><font color="#000066"><b><font color="#000066"><b><font color="#ffffff" face="Verdana, Arial, Helvetica, sans-serif" size="2">Bulma </font></b></font></b></font></div>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td bgcolor="#9999cc" height="33" width="51%">
+                                <div align="center"><font color="#000066"><b><font color="#000066"><b><font face="Verdana, Arial, Helvetica, sans-serif" size="2">Secrétaire</font></b></font></b></font></div>
+                                </td>
+                                <td bgcolor="#666699" width="49%">
+                                <div align="center"><font color="#000066"><b><font color="#ffffff" face="Verdana, Arial, Helvetica, sans-serif" size="2">Yajirobe<br>
+                                </font></b></font></div>
+                                </td>
+                                </tr>
+                                </tbody>
+                                </table>
+                                </td>
+                                </tr>
+                            </tbody>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="three" class="no-padding">
+        <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal">
+                        <img src="ressources/sep1.jpg" class="img-responsive" alt="Image 1"></img>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal">
+                        <img src="ressources/sep2.jpg" class="img-responsive" alt="Image 2"></img>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal">
+                        <img src="ressources/sep3.jpeg" class="img-responsive" alt="Image 3"></img>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal">
+                        <img src="ressources/sepak4.jpg" class="img-responsive" alt="Image 6"></img>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal">
+                        <img src="ressources/sepak2.gif" class="img-responsive" alt="Image 4"></img>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a href="#galleryModal" class="gallery-box" data-toggle="modal">
+                        <img src="ressources/sepak3.jpg" class="img-responsive" alt="Image 5"></img>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid v-center" id="four">
+    <h2 class="margin-top-0 text-primary" style="text-align: center; margin-bottom: 2em;">Boutique</h2>
+    <div class="row">
+        <div class="col-sm-2 col-sm-offset-2 col-xs-6">
+            <div class="text-center">
+                <a href="">
+                    <img style="width:100px;" class="img-circle img-responsive center-block" src="ressources/ballon.jpg">
+                </a>
+                <h3 class="text-center">Balle de Takraw compétition - adulte/homme</h3>
+                <h3 class="text-center">15€ <br>licencié : 12€</h3>
+            </div>
+        </div>
+        <div class="col-sm-2 col-xs-6">
+            <div class="text-center">
+                <a href="">
+                    <img style="width:100px;" class="img-circle img-responsive center-block" src="ressources/junior.jpg">
+                </a>
+                <h3 class="text-center"> Balle de Takraw adulte/femme - junior</h3>
+                <h3 class="text-center">15€ <br>licencié : 12€</h3>
+            </div>
+        </div>
+        <div class="col-sm-2 col-xs-6">
+            <div class="text-center">
+                <a href="">
+                    <img style="width:100px;" class="img-circle img-responsive center-block" src="ressources/entrainement.jpg">
+                </a>
+                <h3 class="text-center"> Balle de Takraw enfant/entraînement</h3>
+                <h3 class="text-center">15€ <br>licencié : 12€</h3>
+            </div>
+        </div>
+        <div class="col-sm-2 col-xs-6">
+            <div class="text-center">
+                <a href="">
+                    <img style="width:100px;" class="img-circle img-responsive center-block" src="ressources/rotin.jpg">
+                </a>
+                <h3 class="text-center"> Balle de Takraw traditionelle (en rotin)</h3>
+                <h3 class="text-center">15€ <br>licencié : 12€</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 col-sm-offset-2 col-xs-6">
+            <div class="text-center">
+                <a href="">
+                    <img style="width:100px;" class="img-responsive center-block" src="ressources/filet.jpg">
+                </a>
+                <h3 class="text-center">A - filet compétition MN 801 <br> prix : 40€ <br> licencié : 34€ </h3>
+                <h3 class="text-center">B - filet entraînement MN 701 <br> licencié A : 25€ <br> licencié B : 21€ </h3>
+            </div>
+        </div>
+        <div class="col-sm-2 col-xs-6">
+            <div class="text-center">
+                <a href="">
+                    <img style="width:100px;" class="img-responsive center-block" src="ressources/poteaux.jpg">
+                </a>
+                <h3 class="text-center"> 2 poteaux</h3>
+                <h3 class="text-center"> prix : - <br>licencié : -10%</h3>
+            </div>
+        </div>
+        <div class="col-sm-2 col-xs-6">
+            <div class="text-center">
+                <a href="">
+                    <img style="width:100px;" class="img-responsive center-block" src="ressources/traceur.jpg">
+                </a>
+                <h3 class="text-center">Système de marquage pour courts extérieurs</h3>
+                <h3 class="text-center"> prix : - <br>licencié : -20%</h3>
+            </div>
+        </div>
+        <div class="col-sm-2 col-xs-6">
+            <div class="text-center">
+                <a href="">
+                    <img style="width:100px;" class="img-responsive center-block" src="ressources/chaussures.jpg">
+                </a>
+                <h3 class="text-center">Chaussures de Takraw Zupa ®</h3>
+                <h3 class="text-center">A - Basse Blanche et Rouge (tailles 35 au 45) = 40€<br> licencié : 34€ </h3>
+                <h3 class="text-center">B - Montante Blanche et Rouge (tailles 35 au 45) = 45€<br> licencié : 38,25€ </h3>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 col-sm-offset-2 col-xs-6">
+            <div class="text-center">
+                <a href="">
+                    <img style="width:100px;" class="img-responsive center-block" src="ressources/book.jpg">
+                </a>
+                <h3 class="text-center">Guide Officiel du Sepak Takraw
+                <br>Rupture de stock
+                <br>Nouvelle édition en cours de réalisation</h3>
+                <h3 class="text-center"> prix : 20€ <br>licencié : 19€</h3>
+            </div>
+        </div>
+        <div class="col-sm-2 col-xs-6">
+            <div class="text-center">
+                <a href="">
+                    <img style="width:100px;" class="img-responsive center-block" src="ressources/cd.jpg">
+                </a>
+                <h3 class="text-center">CD Rom ISTAF (démonstration vidéo)</h3>
+                <h3 class="text-center">OFFERT</h3>
+             </div>
+        </div>
+    </div>
+</section>
+    <section id="five">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="margin-top-0 text-primary">Partenaires</h2>
+                        <hr class="primary">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 text-center">
+                        <div class="feature">
+                           <img src="ressources/logo1.jpg" class="img-responsive text-center" alt="Image 1">
+                            <h3>Ligue nationale de sepak takraw</h3>
+                            <p class="text-muted">tous les clubs de France de Sepak Takraw</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 text-center">
+                        <div class="feature">
+                            
+                            <img src="ressources/logo2.jpg" class="img-responsive text-center" alt="Image 2">
+                            <h3>Ligue internationale nationale de sepak takraw</h3>
+                            <p class="text-muted">Le Sepak Takraw est très populaire en Asie du sud Est notamment</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 text-center">
+                        <div class="feature">
+                            
+                            <img src="ressources/logo3.jpg" class="img-responsive text-center" alt="Image 3">
+                            <h3>Championnat européen</h3>
+                            <p class="text-muted">Des championnats d'Europe au niveaux natioanles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <section id="last">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-9 text-center">
+                    <h2 class="margin-top-0 wow fadeIn">Nous contacter</h2>
+                    <hr class="primary">
+                    <p>Veuillez préciser la nature de votre demande dans "Titre"</p>
+                </div>
+                <div class="col-lg-10 col-lg-offset-10 text-center">
+                    <form class="contact-form row">
+                        <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Nom">
+                        </div>
+                        <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Prénom">
+                        </div>
+                        <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                         <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Titre">
+                        </div>
+                        <div class="col-md-12">
+                            <label></label>
+                            <textarea class="form-control" rows="9" placeholder="Votre message.."></textarea>
+                        </div>
+                        <div class="col-md-4 col-md-offset-4">
+                            <label></label>
+                            <button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 column">
+                    <h4>Sepakiller</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#one">Présentation</a></li>
+                        <li><a href="two">L'association</a></li>
+                        <li><a href="three">Gallerie</a></li>
+                        <li><a href="four">Boutique</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 column">
+                    <h4>About</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 column">
+                    <h4></h4>
+                    <form>
+                        <div class="form-group">
+                          <input type="text" class="form-control" title="No spam, we promise!" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                          <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">Newsletter</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-sm-3 text-right">
+                    <h4>Nous suivre</h4>
+                    <ul class="list-inline">
+                      <li><a href=#"><img src="ressources/fb.svg"></img></a><i class="icon-lg ion-social-facebook-outline bd"></i>&nbsp;</li>
+                      <li><a href=#"><img src="ressources/tw.svg"></img></a><i class="icon-lg ion-social-twitter-outline bd"></i>&nbsp;</li>
+                    </ul>
+                </div>
+            </div>
+            <br/>
+            <span class="pull-right text-muted small"><a href="http://www.bootstrapzero.com">Landing Zero by BootstrapZero</a> ©2015 Company</span>
+        </div>
+    </footer>
+    <div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="modal-body">
+        		<img src="//placehold.it/1200x700/222?text=..." id="galleryImage" class="img-responsive" />
+        		<p>
+        		    <br/>
+        		    <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">Close <i class="ion-android-close"></i></button>
+        		</p>
+        	</div>
+        </div>
+        </div>
+    </div>
+    </body>
 </html>

@@ -232,7 +232,6 @@ header {
     text-align: center;
     color: #fff;
     width: 100%;
-    background-image:url(../ressources/sepak1.jpg);
     background-color: #c9c9c9;
     background-position: center;
     -webkit-background-size: cover;
@@ -610,23 +609,4 @@ a.dbz:hover {
 
 .bd {
     color: black;
-}
-
-.btn-group-vertical>.btn-group:after,
-.btn-toolbar:after,
-.clearfix:after,
-.container-fluid:after,
-.container:after,
-.dl-horizontal dd:after,
-.form-horizontal .form-group:after,
-.modal-footer:after,
-.modal-header:after,
-.nav:after,
-.navbar-collapse:after, 
-.navbar-header:after,
-.navbar:after,
-.pager:after,
-.panel-body:after,
-.row:after{
-    clear:none;
 }
