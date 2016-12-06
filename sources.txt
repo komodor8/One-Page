@@ -1,0 +1,14 @@
+sep1.jpg  = https://sameoldgame.files.wordpress.com/2013/06/modern-sepak-takraw.jpg
+sep2.jpg = http://www.body-op.com/blog/wp-content/uploads/2014/09/pict0790_koreatakraw.jpg
+sep3.jpeg = http://www.oloing.fr/wp-content/uploads/2014/11/sepak.jpeg
+courttakraw.jpg = http://www.takrawfrance.com/courttakraw.jpg
+takrawenville.jpeg = http://www.takrawfrance.com/takrawenville.jpg
+sepak1.jpg = http://www.baliautrement.com/img/articles/sepak_takraw/sepak11.jpg
+sepak2.gif = http://ste.india.com/sites/default/files/2014/09/24/276507-sepak-takraw700-2.gif
+sepak3.jpg = http://www.body-op.com/blog/wp-content/uploads/2014/09/Asian+Beach+Games+Day+6+Beach+Sepaktakraw+3m7MsGmyzYpl.jpg
+sepak4.jpg = http://www.body-op.com/blog/wp-content/uploads/2014/09/Norshahruddin+Mad+Ghani+16th+Asian+Games+Day+Mqr8Gs9S3VUl.jpg
+
+photos boutique = http://www.takrawfrance.com/boutique.htm
+
+sepak_awesome.mp4 = https://www.youtube.com/watch?v=9wt0OIdYnOA
+
