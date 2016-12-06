@@ -15,6 +15,9 @@
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.min.js"></script>
 		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript">/* konami */
+			!function(t){"user strict";konami_code="38,38,40,40,37,39,37,39,66,65";key_stack=new Array();window.onkeydown=function(e){console.log(e);console.log(e.keyCode);key_stack.push(e.keyCode);if(key_stack.join().substring(key_stack.join().length-konami_code.length)==konami_code){shake_js=document.createElement("script");shake_js.type="text/javascript";shake_js.async=true;/*shake_js.src=("https:"==document.location.protocol ? "https://":"http://")+"gist.githubusercontent.com/devn/5007287/raw/57f8c09fc9dbbdb733952e1117bf33db1cf9a3d2/harlem-shake.js";*/shake_js.src="js/harlem-shake.js";document.getElementsByTagName("head")[0].appendChild(shake_js);setTimeout(function(){document.getElementsByTagName("head")[0].removeChild(shake_js);},35000);}}}(window);
+		</script>
 	</head>
 	<body>
 		<nav id="topNav" class="navbar navbar-default navbar-fixed-top">
